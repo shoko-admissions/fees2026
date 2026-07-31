@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="湘南工科大学附属高等学校 学校見学会配布資料｜2026年度コース別校納金のご案内">
+<meta property="og:title" content="2026年度 コース別校納金のご案内｜湘南工科大学附属高等学校">
+<meta property="og:description" content="学校見学会配布資料。コース別・学年別の校納金をご覧いただけます。">
+<meta property="og:type" content="website">
+<title>2026年度 コース別校納金のご案内｜湘南工科大学附属高等学校</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#22303C; --ink-soft:#5B6770; --paper:#F7F8F7; --card:#FFFFFF;
+    --line:#E3E6E3; --navy:#1F3864; --navy-tint:#EEF1F7;
+    --radius:14px;
+    --serif:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+    --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic Medium","Yu Gothic",-apple-system,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    font-family:var(--sans); color:var(--ink); background:var(--paper);
+    font-size:16px; line-height:1.7; font-feature-settings:"palt";
+    -webkit-text-size-adjust:100%;
+  }
+  .num{font-variant-numeric:tabular-nums}
+  .wrap{max-width:680px;margin:0 auto;padding:0 18px}
+
+  /* ---------- header ---------- */
+  .hero{background:var(--navy);color:#fff;padding:34px 0 28px}
+  .hero .school{font-size:13px;letter-spacing:.14em;opacity:.85}
+  .hero h1{font-family:var(--serif);font-weight:700;font-size:27px;line-height:1.45;margin-top:8px;letter-spacing:.04em}
+  .hero .lede{font-size:14px;margin-top:12px;opacity:.92;line-height:1.8}
+
+  /* ---------- basics ---------- */
+  .basics{padding:22px 0 6px}
+  .basics h2{font-size:15px;color:var(--navy);letter-spacing:.1em;margin-bottom:12px}
+  .point{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start}
+  .point .tag{flex:none;background:var(--navy-tint);color:var(--navy);font-size:12px;font-weight:700;border-radius:6px;padding:3px 8px;margin-top:2px;white-space:nowrap}
+  .point p{font-size:14px}
+  .point strong{font-weight:700}
+
+  /* ---------- sticky chip nav ---------- */
+  .chips{position:sticky;top:0;z-index:10;background:rgba(247,248,247,.96);backdrop-filter:blur(4px);border-bottom:1px solid var(--line);padding:10px 0}
+  .chips .row{display:flex;gap:8px;overflow-x:auto;padding:0 18px;max-width:680px;margin:0 auto;scrollbar-width:none}
+  .chips .row::-webkit-scrollbar{display:none}
+  .chip{flex:none;display:inline-block;color:#fff;font-size:13px;font-weight:700;text-decoration:none;border-radius:999px;padding:7px 15px;letter-spacing:.03em}
+  .chip:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+  /* ---------- course sections ---------- */
+  .course{padding:30px 0 8px;scroll-margin-top:64px}
+  .course-head{display:flex;align-items:baseline;gap:10px;border-left:6px solid var(--c);padding-left:12px;margin-bottom:6px}
+  .course-head h2{font-family:var(--serif);font-size:23px;font-weight:700;color:var(--c-deep);letter-spacing:.03em}
+  .course-head .sub{font-size:12px;color:var(--ink-soft)}
+  .course .caption{font-size:13px;color:var(--ink-soft);margin-bottom:14px}
+
+  .totals{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
+  .tcard{background:var(--c-tint);border-radius:12px;padding:10px 8px 12px;text-align:center}
+  .tcard .yr{font-size:12px;font-weight:700;color:var(--c-deep);letter-spacing:.08em}
+  .tcard .amt{font-size:17px;font-weight:700;margin-top:4px;line-height:1.3}
+  .tcard .amt small{font-size:11px;font-weight:600;color:var(--ink-soft)}
+  .tcard .sexrow{font-size:12px;margin-top:2px;color:var(--ink-soft)}
+
+  .propbar{display:flex;height:10px;border-radius:999px;overflow:hidden;margin:2px 0 6px}
+  .propbar span{display:block;height:100%}
+  .propbar .p1{background:var(--c)}
+  .propbar .p2{background:var(--c);opacity:.55}
+  .propbar .p3{background:var(--c);opacity:.28}
+  .proplegend{font-size:11.5px;color:var(--ink-soft);margin-bottom:14px}
+
+  details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;overflow:hidden}
+  summary{list-style:none;cursor:pointer;display:flex;justify-content:flex-start;align-items:center;gap:8px;padding:13px 16px;font-weight:700;font-size:15px}
+  summary .num{font-weight:600;font-size:13.5px;color:var(--ink-soft)}
+  summary::-webkit-details-marker{display:none}
+  summary .open-mark{flex:none;margin-left:auto;color:var(--c-deep);font-size:12px;font-weight:700;transition:transform .2s}
+  @media (prefers-reduced-motion:reduce){summary .open-mark{transition:none}}
+  details[open] summary .open-mark{transform:rotate(180deg)}
+  summary:focus-visible{outline:3px solid var(--c-deep);outline-offset:-3px}
+  .breakdown{border-top:1px solid var(--line);padding:6px 16px 12px}
+  .brow{display:flex;justify-content:flex-start;align-items:baseline;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:14px}
+  .brow:last-child{border-bottom:none}
+  .brow .item{color:var(--ink);flex:0 0 9.5em}
+  .brow .item small{display:block;font-size:11.5px;color:var(--ink-soft);line-height:1.5}
+  .brow .val{white-space:nowrap;font-weight:600}
+  .brow.total{border-top:2px solid var(--c);border-bottom:none;margin-top:4px;padding-top:10px}
+  .brow.total .item,.brow.total .val{font-weight:700;color:var(--c-deep)}
+
+  /* ---------- comparison ---------- */
+  .compare{padding:34px 0 10px;scroll-margin-top:64px}
+  .compare h2{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--navy);border-left:6px solid var(--navy);padding-left:12px;margin-bottom:6px}
+  .compare .caption{font-size:13px;color:var(--ink-soft);margin-bottom:16px}
+  .cbar{margin-bottom:14px}
+  .cbar .label{display:flex;justify-content:space-between;font-size:14px;margin-bottom:4px}
+  .cbar .label b{font-weight:700}
+  .cbar .track{background:#ECEEEC;border-radius:999px;height:14px;overflow:hidden}
+  .cbar .fill{height:100%;border-radius:999px}
+
+  /* ---------- footer ---------- */
+  .notes{padding:26px 0 44px}
+  .notes h2{font-size:14px;color:var(--navy);letter-spacing:.1em;margin-bottom:10px}
+  .notes ul{list-style:none}
+  .notes li{font-size:12.5px;color:var(--ink-soft);padding-left:1.2em;text-indent:-1.2em;margin-bottom:6px;line-height:1.7}
+  .notes li::before{content:"※ "}
+  .foot{border-top:1px solid var(--line);padding:18px 0 40px;font-size:12px;color:var(--ink-soft);text-align:center;line-height:1.9}
+  .foot .footnote{font-size:12px;color:var(--ink-soft);margin-bottom:10px}
+
+  /* ---------- course color themes ---------- */
+  .t-tokka   {--c:#7B4FA6; --c-deep:#5E3A82; --c-tint:#F5F0FA}
+  .t-advance {--c:#E85298; --c-deep:#C2317A; --c-tint:#FDF0F6}
+  .t-standard{--c:#3A9E4C; --c-deep:#2C7A3B; --c-tint:#EFF7F0}
+  .t-tech    {--c:#2E6FB7; --c-deep:#245A96; --c-tint:#EEF4FB}
+  .t-sports  {--c:#F08300; --c-deep:#B85C00; --c-tint:#FDF3E7}
+  .chip.t-tokka{background:#5E3A82}
+  .chip.t-advance{background:#C2317A}
+  .chip.t-standard{background:#2C7A3B}
+  .chip.t-tech{background:#245A96}
+  .chip.t-sports{background:#B85C00}
+  .chip.t-all{background:var(--navy)}
+
+  @media (min-width:560px){
+    .hero h1{font-size:32px}
+    .tcard .amt{font-size:19px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="school">湘南工科大学附属高等学校</p>
+    <h1>2026年度<br>コース別校納金のご案内</h1>
+    <p class="lede">入学から卒業までにかかる費用を、コース別・学年別にご覧いただけます。金額はすべて2026年度入学生のものです。</p>
+  </div>
+</header>
+
+<section class="basics">
+  <div class="wrap">
+    <h2>はじめにご確認ください</h2>
+    <div class="point"><span class="tag">授業料</span><p>高校無償化により<strong>授業料は無料</strong>です。</p></div>
+    <div class="point"><span class="tag">維持費</span><p>全コース共通で<strong>月額12,800円</strong>。4カ月分ずつ（<span class="num">51,200</span>円）を<strong>4月・8月・12月</strong>にお支払いいただきます。<br><small style="color:var(--ink-soft);font-size:12.5px">※以下の年額総額には維持費を含みません（年間換算 <span class="num">153,600</span>円）。</small></p></div>
+    <div class="point"><span class="tag">総額の内訳</span><p>各学年の総額には、教材費・諸会費のほか、1年次は<strong>入学金・施設設備費・制服等の入学時費用</strong>を含みます。内訳は各コースの学年をタップしてご確認ください。</p></div>
+  </div>
+</section>
+
+<nav class="chips" aria-label="コース選択">
+  <div class="row">
+    <a class="chip t-tokka" href="#tokka">進学特化</a>
+    <a class="chip t-advance" href="#advance">アドバンス</a>
+    <a class="chip t-standard" href="#standard">スタンダード</a>
+    <a class="chip t-tech" href="#tech">技術</a>
+    <a class="chip t-sports" href="#sports">体育</a>
+    <a class="chip t-all" href="#compare">比較</a>
+  </div>
+</nav>
+
+<!-- ============ 進学特化 ============ -->
+<section class="course t-tokka" id="tokka">
+  <div class="wrap">
+    <div class="course-head"><h2>進学特化コース</h2></div>
+    <p class="caption">年額総額（維持費を除く）</p>
+    <div class="totals">
+      <div class="tcard"><p class="yr">1年生</p><p class="amt num">約72.9<small>万円</small></p><p class="sexrow num">女子 約73.4万円</p></div>
+      <div class="tcard"><p class="yr">2年生</p><p class="amt num">約52.9<small>万円</small></p></div>
+      <div class="tcard"><p class="yr">3年生</p><p class="amt num">約11.6<small>万円</small></p></div>
+    </div>
+    <div class="propbar" aria-hidden="true"><span class="p1" style="width:53%"></span><span class="p2" style="width:38.5%"></span><span class="p3" style="width:8.5%"></span></div>
+    <p class="proplegend">3年間合計 約137.5万円（男子）の学年別内訳 ／ 濃い順に1年・2年・3年</p>
+
+    <details open>
+      <summary>1年生の内訳 <span class="num">729,510円（女子 734,560円）</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">入学金</span><span class="val num">230,000円</span></div>
+        <div class="brow"><span class="item">施設設備費</span><span class="val num">170,000円</span></div>
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">40,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">88,000円</span></div>
+        <div class="brow"><span class="item">国内語学研修費</span><span class="val num">80,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow"><span class="item">制服</span><span class="val num">男子 48,180円<br>女子 51,480円</span></div>
+        <div class="brow"><span class="item">体育用品</span><span class="val num">男子 35,540円<br>女子 37,290円</span></div>
+        <div class="brow"><span class="item">指定バッグ<small>グレーバッグの場合</small></span><span class="val num">5,390円</span></div>
+        <div class="brow total"><span class="item">1年生 合計</span><span class="val num">男子 約729,510円<br>女子 約734,560円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>2年生の内訳 <span class="num">約529,400円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">31,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">76,000円</span></div>
+        <div class="brow"><span class="item">修学旅行費<small>支払い方法は複数あります</small></span><span class="val num">約390,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">2年生 合計</span><span class="val num">約529,400円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>3年生の内訳 <span class="num">約116,400円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">19,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">65,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">3年生 合計</span><span class="val num">約116,400円</span></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ アドバンス ============ -->
+<section class="course t-advance" id="advance">
+  <div class="wrap">
+    <div class="course-head"><h2>アドバンスコース</h2><span class="sub">セレクトクラス含む</span></div>
+    <p class="caption">年額総額（維持費を除く）</p>
+    <div class="totals">
+      <div class="tcard"><p class="yr">1年生</p><p class="amt num">約61.5<small>万円</small></p><p class="sexrow num">女子 約62.0万円</p></div>
+      <div class="tcard"><p class="yr">2年生</p><p class="amt num">約24.2<small>万円</small></p></div>
+      <div class="tcard"><p class="yr">3年生</p><p class="amt num">約7.0<small>万円</small></p></div>
+    </div>
+    <div class="propbar" aria-hidden="true"><span class="p1" style="width:66.3%"></span><span class="p2" style="width:26.1%"></span><span class="p3" style="width:7.6%"></span></div>
+    <p class="proplegend">3年間合計 約92.8万円（男子）の学年別内訳 ／ 濃い順に1年・2年・3年</p>
+
+    <details open>
+      <summary>1年生の内訳 <span class="num">615,510円（女子 620,560円）</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">入学金</span><span class="val num">230,000円</span></div>
+        <div class="brow"><span class="item">施設設備費</span><span class="val num">170,000円</span></div>
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">32,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">28,000円</span></div>
+        <div class="brow"><span class="item">新入生合宿費</span><span class="val num">34,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow"><span class="item">制服</span><span class="val num">男子 48,180円<br>女子 51,480円</span></div>
+        <div class="brow"><span class="item">体育用品</span><span class="val num">男子 35,540円<br>女子 37,290円</span></div>
+        <div class="brow"><span class="item">指定バッグ<small>グレーバッグの場合</small></span><span class="val num">5,390円</span></div>
+        <div class="brow total"><span class="item">1年生 合計</span><span class="val num">男子 約615,510円<br>女子 約620,560円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>2年生の内訳 <span class="num">約242,400円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">15,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">45,000円</span></div>
+        <div class="brow"><span class="item">修学旅行費<small>支払い方法は複数あります</small></span><span class="val num">約150,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">2年生 合計</span><span class="val num">約242,400円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>3年生の内訳 <span class="num">約70,400円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">9,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">29,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">3年生 合計</span><span class="val num">約70,400円</span></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ スタンダード ============ -->
+<section class="course t-standard" id="standard">
+  <div class="wrap">
+    <div class="course-head"><h2>スタンダードコース</h2></div>
+    <p class="caption">年額総額（維持費を除く）</p>
+    <div class="totals">
+      <div class="tcard"><p class="yr">1年生</p><p class="amt num">約60.5<small>万円</small></p><p class="sexrow num">女子 約61.0万円</p></div>
+      <div class="tcard"><p class="yr">2年生</p><p class="amt num">約22.6<small>万円</small></p></div>
+      <div class="tcard"><p class="yr">3年生</p><p class="amt num">約6.5<small>万円</small></p></div>
+    </div>
+    <div class="propbar" aria-hidden="true"><span class="p1" style="width:67.5%"></span><span class="p2" style="width:25.2%"></span><span class="p3" style="width:7.3%"></span></div>
+    <p class="proplegend">3年間合計 約89.7万円（男子）の学年別内訳 ／ 濃い順に1年・2年・3年</p>
+
+    <details open>
+      <summary>1年生の内訳 <span class="num">605,510円（女子 610,560円）</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">入学金</span><span class="val num">230,000円</span></div>
+        <div class="brow"><span class="item">施設設備費</span><span class="val num">170,000円</span></div>
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">25,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">25,000円</span></div>
+        <div class="brow"><span class="item">新入生合宿費</span><span class="val num">34,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow"><span class="item">制服</span><span class="val num">男子 48,180円<br>女子 51,480円</span></div>
+        <div class="brow"><span class="item">体育用品</span><span class="val num">男子 35,540円<br>女子 37,290円</span></div>
+        <div class="brow"><span class="item">指定バッグ<small>グレーバッグの場合</small></span><span class="val num">5,390円</span></div>
+        <div class="brow total"><span class="item">1年生 合計</span><span class="val num">男子 約605,510円<br>女子 約610,560円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>2年生の内訳 <span class="num">約226,400円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">13,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">31,000円</span></div>
+        <div class="brow"><span class="item">修学旅行費<small>支払い方法は複数あります</small></span><span class="val num">約150,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">2年生 合計</span><span class="val num">約226,400円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>3年生の内訳 <span class="num">約65,400円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">7,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">26,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">3年生 合計</span><span class="val num">約65,400円</span></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ 技術 ============ -->
+<section class="course t-tech" id="tech">
+  <div class="wrap">
+    <div class="course-head"><h2>技術コース</h2></div>
+    <p class="caption">年額総額（維持費を除く）</p>
+    <div class="totals">
+      <div class="tcard"><p class="yr">1年生</p><p class="amt num">約61.2<small>万円</small></p><p class="sexrow num">女子 約61.7万円</p></div>
+      <div class="tcard"><p class="yr">2年生</p><p class="amt num">約47.8<small>万円</small></p></div>
+      <div class="tcard"><p class="yr">3年生</p><p class="amt num">約5.3<small>万円</small></p></div>
+    </div>
+    <div class="propbar" aria-hidden="true"><span class="p1" style="width:53.5%"></span><span class="p2" style="width:41.8%"></span><span class="p3" style="width:4.7%"></span></div>
+    <p class="proplegend">3年間合計 約114.4万円（男子）の学年別内訳 ／ 濃い順に1年・2年・3年</p>
+
+    <details open>
+      <summary>1年生の内訳 <span class="num">612,510円（女子 617,560円）</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">入学金</span><span class="val num">230,000円</span></div>
+        <div class="brow"><span class="item">施設設備費</span><span class="val num">170,000円</span></div>
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">17,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">38,000円</span></div>
+        <div class="brow"><span class="item">合宿費</span><span class="val num">36,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow"><span class="item">制服</span><span class="val num">男子 48,180円<br>女子 51,480円</span></div>
+        <div class="brow"><span class="item">体育用品</span><span class="val num">男子 35,540円<br>女子 37,290円</span></div>
+        <div class="brow"><span class="item">指定バッグ<small>グレーバッグの場合</small></span><span class="val num">5,390円</span></div>
+        <div class="brow total"><span class="item">1年生 合計</span><span class="val num">男子 約612,510円<br>女子 約617,560円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>2年生の内訳 <span class="num">約478,900円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">8,500円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">22,000円</span></div>
+        <div class="brow"><span class="item">合宿費</span><span class="val num">36,000円</span></div>
+        <div class="brow"><span class="item">修学旅行費<small>支払い方法は複数あります</small></span><span class="val num">約380,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">2年生 合計</span><span class="val num">約478,900円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>3年生の内訳 <span class="num">約53,400円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">7,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">14,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">3年生 合計</span><span class="val num">約53,400円</span></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ 体育 ============ -->
+<section class="course t-sports" id="sports">
+  <div class="wrap">
+    <div class="course-head"><h2>体育コース</h2></div>
+    <p class="caption">年額総額（維持費を除く）</p>
+    <div class="totals">
+      <div class="tcard"><p class="yr">1年生</p><p class="amt num">約59.7<small>万円</small></p><p class="sexrow num">女子 約60.2万円</p></div>
+      <div class="tcard"><p class="yr">2年生</p><p class="amt num">約39.5<small>万円</small></p></div>
+      <div class="tcard"><p class="yr">3年生</p><p class="amt num">約6.3<small>万円</small></p></div>
+    </div>
+    <div class="propbar" aria-hidden="true"><span class="p1" style="width:56.5%"></span><span class="p2" style="width:37.5%"></span><span class="p3" style="width:6%"></span></div>
+    <p class="proplegend">3年間合計 約105.6万円（男子）の学年別内訳 ／ 濃い順に1年・2年・3年</p>
+
+    <details open>
+      <summary>1年生の内訳 <span class="num">597,510円（女子 602,560円）</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">入学金</span><span class="val num">230,000円</span></div>
+        <div class="brow"><span class="item">施設設備費</span><span class="val num">170,000円</span></div>
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">14,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">28,000円</span></div>
+        <div class="brow"><span class="item">新入生合宿費</span><span class="val num">34,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow"><span class="item">制服</span><span class="val num">男子 48,180円<br>女子 51,480円</span></div>
+        <div class="brow"><span class="item">体育用品</span><span class="val num">男子 35,540円<br>女子 37,290円</span></div>
+        <div class="brow"><span class="item">指定バッグ<small>グレーバッグの場合</small></span><span class="val num">5,390円</span></div>
+        <div class="brow total"><span class="item">1年生 合計</span><span class="val num">男子 約597,510円<br>女子 約602,560円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>2年生の内訳 <span class="num">約395,900円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">8,500円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">35,000円</span></div>
+        <div class="brow"><span class="item">修学旅行費<small>支払い方法は複数あります</small></span><span class="val num">約320,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">2年生 合計</span><span class="val num">約395,900円</span></div>
+      </div>
+    </details>
+    <details>
+      <summary>3年生の内訳 <span class="num">約63,400円</span><span class="open-mark">▼</span></summary>
+      <div class="breakdown">
+        <div class="brow"><span class="item">教科書代・副教材費</span><span class="val num">4,000円</span></div>
+        <div class="brow"><span class="item">外部模試代等<small>（副教材費）</small></span><span class="val num">27,000円</span></div>
+        <div class="brow"><span class="item">学年会費</span><span class="val num">18,000円</span></div>
+        <div class="brow"><span class="item">生徒会費</span><span class="val num">6,000円</span></div>
+        <div class="brow"><span class="item">後援会費</span><span class="val num">8,400円</span></div>
+        <div class="brow total"><span class="item">3年生 合計</span><span class="val num">約63,400円</span></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ 比較 ============ -->
+<section class="compare" id="compare">
+  <div class="wrap">
+    <h2>3年間合計の比較</h2>
+    <p class="caption">男子・グレーバッグ選択時・維持費を除く概算</p>
+    <div class="cbar t-tokka">
+      <div class="label"><b>進学特化</b><span class="num">約137.5万円</span></div>
+      <div class="track"><div class="fill" style="width:100%;background:var(--c)"></div></div>
+    </div>
+    <div class="cbar t-tech">
+      <div class="label"><b>技術</b><span class="num">約114.4万円</span></div>
+      <div class="track"><div class="fill" style="width:83.2%;background:var(--c)"></div></div>
+    </div>
+    <div class="cbar t-sports">
+      <div class="label"><b>体育</b><span class="num">約105.6万円</span></div>
+      <div class="track"><div class="fill" style="width:76.8%;background:var(--c)"></div></div>
+    </div>
+    <div class="cbar t-advance">
+      <div class="label"><b>アドバンス（セレクト含む）</b><span class="num">約92.8万円</span></div>
+      <div class="track"><div class="fill" style="width:67.5%;background:var(--c)"></div></div>
+    </div>
+    <div class="cbar t-standard">
+      <div class="label"><b>スタンダード</b><span class="num">約89.7万円</span></div>
+      <div class="track"><div class="fill" style="width:65.2%;background:var(--c)"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="notes">
+  <div class="wrap">
+    <h2>ご留意事項</h2>
+    <ul>
+      <li>金額は2026年度入学生のものです。物価等の状況により変更となる場合があります。</li>
+      <li>維持費（月額12,800円）は上記総額に含まれません。4月・8月・12月に4カ月分ずつお支払いいただきます。</li>
+      <li>女子の1年生総額は制服・体育用品の価格差（＋5,050円）によるものです。</li>
+      <li>指定バッグはグレーバッグ（5,390円）で計算しています。バックパック（8,550〜14,300円）を選択する場合は差額が生じます。</li>
+      <li>修学旅行費は概算です。支払い方法は複数ございます。詳細は入学後にご案内します。</li>
+      <li>3年間合計は各学年の年額総額を合算した参考値です。</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="footnote">本資料は学校見学会の配布資料です。金額は2026年度入学生のものです。</p>
+    <p>2026年度版　最終更新：2026年7月<br>湘南工科大学附属高等学校　入試広報部</p>
+  </div>
+</footer>
+
+</body>
+</html>
